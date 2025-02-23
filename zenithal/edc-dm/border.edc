@@ -111,7 +111,7 @@ group { name: "e/widgets/border/volume";
 group { name: "e/widgets/border/default/border";
    alias: "e/widgets/border/shaped/border";
    images.image: "vgrad_med_lighter.png" COMP;
-   images.image: "vgrad_med_dark_color.png" COMP;
+   images.image: "vgrad_med_dark_color_round.png" COMP;
    images.image: "bevel_out.png" COMP;
    images.image: "shine.png" COMP;
    images.image: "bevel_dark_out.png" COMP;
@@ -132,6 +132,7 @@ group { name: "e/widgets/border/default/border";
    images.image: "screen_circular_shadow.png" COMP;
    images.image: "win_shadow.png" COMP;
    data.item: "shadow" "1";
+   data.item: "shaped" "1";
    parts {
       part { name: "shadow_clip"; type: RECT; mouse_events: 0;
          description { state: "default";
@@ -190,8 +191,9 @@ group { name: "e/widgets/border/default/border";
             color_class: "border_bottom";
             color: 135 135 135 255;
             rel1.relative: 0.0 0.0;
-            rel1.offset: 3 0;
+            rel1.offset: 3 20;
             rel2.relative: 0.0 1.0;
+            rel2.offset: 0 -5;
             min: 3 0;
             fixed: 1 0;
          }
@@ -212,8 +214,9 @@ group { name: "e/widgets/border/default/border";
             color_class: "border_bottom";
             color: 135 135 135 255;
             rel1.relative: 1.0 0.0;
-            rel1.offset: -3 0;
+            rel1.offset: -3 20;
             rel2.relative: 1.0 1.0;
+            rel2.offset: 0 -5;
             min: 2 0;
             fixed: 1 0;
          }
@@ -235,12 +238,13 @@ group { name: "e/widgets/border/default/border";
             rel2.to_y: "title2";
             rel2.offset: -1 0;
             fill.smooth: 0;
-            TILED_HORIZ(120)
+            image.border: 12 12 12 12;
+            //~ TILED_HORIZ(120)
             color_class: "border_frame";
          }
          description { state: "focused" 0.0;
             inherit: "default" 0.0;
-            image.normal: "vgrad_med_dark_color.png";
+            image.normal: "vgrad_med_dark_color_round.png";
             color_class: "border_frame_active";
          }
       }
@@ -591,13 +595,15 @@ group { name: "e/widgets/border/default/border";
             color: 0 0 0 0;
          }
       }
-      part { name: "bottom"; type: RECT; mouse_events: 0;
+      part { name: "bottom"; mouse_events: 0;
          description { state: "default" 0.0;
             color_class: "border_bottom";
             color: 135 135 135 255;
             rel1.relative: 0.0 1.0;
             rel1.offset: 0 -5;
             rel2.relative: 1.0 1.0;
+            image.normal: "vgrad_med_lighter_bottom.png";
+            image.border: 12 12 12 12;
             min: 0 5;
             fixed: 0 1;
          }
@@ -1560,16 +1566,18 @@ group { name: "e/widgets/border/pixel/border";
 }
 
 group { name: "e/widgets/border/default/move";
-   images.image: "vgrad_tall.png" COMP;
+   images.image: "vgrad_med_lighter_round.png" COMP;
    images.image: "bevel_out.png" COMP;
    images.image: "shine.png" COMP;
    images.image: "ic_win_move.png" COMP;
+   data.item: "shaped" 1;
    parts {
       part { name: "bg"; mouse_events: 0;
          description { state: "default" 0.0;
-            image.normal: "vgrad_tall.png";
+            image.normal: "vgrad_med_lighter_round.png";
+            image.border: 12 12 12 12;
             fill.smooth: 0;
-            TILED_HORIZ(40)
+            //~ TILED_HORIZ(40)
          }
       }
       part { name: "bevel"; mouse_events: 0;
