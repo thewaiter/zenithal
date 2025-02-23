@@ -6,6 +6,7 @@ group { name: "e/shelf/default/base"; nomouse;
       /* this tells e the number of pixels of the shelf to leave "exposed"
        * when auto-hiding the shelf */
       item: "hidden_state_size" "2";
+      item: "shaped" "1";
       /* This makes the border hide instantly after the given amount of
        * seconds - in this case 3 seconds. This means there will be no
        * visible part of the shelf after this time at all as it will be
@@ -39,14 +40,16 @@ group { name: "e/shelf/default/base"; nomouse;
       part { name: "bg";
          description { state: "default" 0.0;
             image.normal: "vgrad_med.png";
-            fill.smooth: 0;
-            TILED_HORIZ(120)
+            fill.smooth: 1;
+            //~ TILED_HORIZ(120)
+            image.border: 12 12 12 12;
             color_class: "shelf_base";
          }
          description { state: "vert" 0.0;
             image.normal: "vgrad_tall.png";
-            fill.smooth: 0;
-            TILED_HORIZ(40)
+            fill.smooth: 1;
+            //~ TILED_HORIZ(40)
+            image.border: 12 12 12 12;
             color_class: "shelf_base";
          }
       }
@@ -61,9 +64,9 @@ group { name: "e/shelf/default/base"; nomouse;
       part { name: "dots_start";
          description { state: "default" 0.0;
             image.normal: "holes_vert.png";
-            rel1.offset: 2 2;
+            rel1.offset: 5 2;
             rel2.relative: 0.0 1.0;
-            rel2.offset: 5 -3;
+            rel2.offset: 2 -3;
             FIXED_SIZE(4, 14)
          }
          description { state: "vert" 0.0;
@@ -92,10 +95,10 @@ group { name: "e/shelf/default/base"; nomouse;
       }
       spacer { "sizer";
          description { state: "default" 0.0;
-            rel1.offset: 1 0;
+            rel1.offset: 1 2;
             rel1.relative: 1.0 0.0;
             rel1.to_x: "dots_start";
-            rel2.offset: -2 -1;
+            rel2.offset: -2 -3;
             rel2.to_x: "dots_end";
             rel2.relative: 0.0 1.0;
          }
@@ -121,7 +124,7 @@ group { name: "e/shelf/default/base"; nomouse;
       part { name: "shine";
          description { state: "default" 0.0;
             image.normal: "shine.png";
-            rel1.offset: 0 -2;
+            rel1.offset: 0 8;
             rel2.relative: 1.0 0.0;
             rel2.offset: -1 2;
             FIXED_SIZE(69, 5)
