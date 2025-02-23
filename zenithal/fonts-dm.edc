@@ -1,0 +1,126 @@
+/*fonts {
+   font: "PT_Sans-Web-Regular.ttf" "PTSans";
+   font: "PT_Sans-Web-Bold.ttf" "PTSans-Bold";
+   font: "PT_Sans-Web-Italic.ttf" "PTSans-Italic";
+   font: "PT_Sans-Web-BoldItalic.ttf" "PTSans-BoldItalic";
+}
+
+#define FN     "PTSans"
+#define FNBD   "PTSans-Bold"
+#define FNIT   "PTSans-Italic"
+#define FNBDIT "PTSans-BoldItalic"
+*/
+#define FN     "Sans"
+#define FNBD   "Sans:style=Bold"
+#define FNIT   "Sans:style=Oblique"
+#define FNBDIT "Sans:style=Bold Italic"
+
+fonts {
+   font: "Megrim.ttf" "Megrim";
+}
+
+// Fancy font
+#define FAFN    "Megrim"
+
+#define FN_COL_DEFAULT_BASIC 24 24 24 255
+/* fonts.edc not sure if this one is neccesary */
+#define FN_COL_DEFAULT 24 24 24 255; color3: 0 0 0 32
+#define FN_COL_DEFAULT_SOFT_SHADOW 24 24 24 255; color3: 0 0 0 18
+#define FN_COL_HIGHLIGHT 29 69 100 255; color2: 29 69 100 24; color3: 29 69 100 18
+#define FN_COL_HIGHLIGHT_CLICKED 201 201 201 255; color2: 29 69 100 64; color3: 29 69 100 32
+#define FN_COL_HIGHLIGHT_DISABLE 201 201 201 64; color2: 29 69 100 16; color3: 29 69 100 8
+/* In some theme's the Highlight color might be used as a selection color
+   in these cases the text needs to be a different color */
+#define FN_COL_HIGHLIGHT_SELECTED 231 231 231 255; color2: 29 69 100 24; color3: 29 69 100 18
+#define FN_COL_MID_GREY 128 128 128 255
+#define FN_COL_MID_GREY_SHADOW 128 128 128 255; color3: 0 0 0 32
+#define FN_COL_DISABLE 80 80 80 255; color3: 24 24 24 25;
+#define FN_COL_DISABLE_SHADOW 80 80 80 255; color3: 24 24 24 192
+#define FN_COL_TRANSPARENT 24 24 24 0; color3: 0 0 0 0
+#define FN_COL_WHITE_GLOW 24 24 24 255; color2: 24 24 24 24; color3: 24 24 24 18
+/* e/module/conf_colors/preview/text */
+#define FN_COL_SHADOW 24 24 24 32
+#define FN_COL_OUTLINE_SHADOW 24 24 24 255; color2: 24 24 24 255; color3: 24 24 24 255
+/* temperature.edc */
+#define FN_COL_SHADOW_BOTTOM 24 24 24 0; color2: 0 0 0 255; color3: 0 0 0 0
+/* elm/diskselector */
+#define FN_COL_WHITE 24 24 24 255
+#define FN_COL_GREY_152 152 152 152 255
+#define FN_COL_GREY_172 172 172 172 255
+/* elm/flipselector */
+#define FN_COL_GREY_192 192 192 192 255; color3: 0 0 0 32
+/* TBD: This could probably just be disabled */
+#define FN_COL_GREY_16 80 80 80 255; color3: 24 24 24 25
+/* elm/various */
+/*  TBD: should this just be the normal disabled */
+#define FN_COL_DISABLE_LIGHTER_SHADOW 80 80 80 255; color3: 24 24 24 15
+/* xkbswitch.edc */
+#define FN_COL_OUTLINE_TRANSPARENT 24 24 24 0; color2: 0 0 0 0; color3: 0 0 0 0;
+#define FN_COL_OUTLINE_DEFAULT 24 24 24 255; color2: 0 0 0 32; color3: 0 0 0 24;
+
+#define ENABLED_TEXTBLOCK_TAGS                                             \
+   tag: "em" "+ font_style=Oblique";                                       \
+   tag: "hilight" "+ color=#e7e7e7 font_weight=Bold style=glow glow_color=#1D456480";    \
+   tag: "heading" "+ font_weight=Bold color=#181818 font_size=11";         \
+   tag: "link" "+ color=#1D4564 underline=on underline_color=#1D4564";     \
+   tag: "preedit" "+ underline=on underline_color=#1D4564";                \
+   tag: "preedit_sel" "+ backing=on backing_color=#000000 color=#181818";  \
+   tag: "title" "+ font_size=26";                                          \
+   tag: "subtitle" "+ font_size=18";                                       \
+   tag: "bigger" "+ font_size=12";                                         \
+   tag: "big" "+ font_size=11";                                            \
+   tag: "small" "+ font_size=8";                                           \
+   tag: "smaller" "+ font_size=7";                                         \
+   tag: "name" "+ color=#888888 font_weight=Bold";                         \
+   tag: "val" "+ color=#181818";                                           \
+   tag: "info" "+ color=#1D4564 style=glow glow_color=#1D456430";          \
+   tag: "success" "+ color=#075800 style=glow glow_color=#00ff0030";       \
+   tag: "warning" "+ color=#582907 style=glow glow_color=#ff7c0030";       \
+   tag: "failure" "+ color=#580007 style=glow glow_color=#ff000030";       \
+   tag: "code" "+ font=Mono style=plain color=#181818";                    \
+   tag: "comment" "+ color=#075800";                                       \
+   tag: "string" "+ color=#580007";                                        \
+   tag: "number" "+ color=#D4D42A font_weight=Bold";                       \
+   tag: "brace" "+ color=#656565";                                         \
+   tag: "type" "+ color=#1D4564";                                          \
+   tag: "class" "+ color=#72AAD4 font_weight=Bold";                        \
+   tag: "function" "+ color=#72AAD4 font_weight=Bold";                     \
+   tag: "param" "+ color=#181818";                                         \
+   tag: "keyword" "+ color=#ff9900 font_weight=Bold";                      \
+   tag: "preprocessor" "+ color=#1D4564 font_weight=Bold";                 \
+   tag: "line_added" "+ color=#075800";                                    \
+   tag: "line_removed" "+ color=#580007";                                  \
+   tag: "line_changed" "+ color=#ff9900";
+
+#define DISABLED_TEXTBLOCK_TAGS                                            \
+   tag: "em" "+ font_style=Oblique";                                       \
+   tag: "hilight" "+ font_weight=Bold style=glow glow_color=#1D456420";    \
+   tag: "link" "+ color=#101820 shadow_color=#66aaff28 underline=on underline_color=#101820"; \
+   tag: "preedit" "+ underline=on underline_color=#1D456488";              \
+   tag: "preedit_sel" "+ backing=on backing_color=#000000 color=#888888";  \
+   tag: "title" "+ font_size=26";                                          \
+   tag: "subtitle" "+ font_size=18";                                       \
+   tag: "bigger" "+ font_size=12";                                         \
+   tag: "big" "+ font_size=11";                                            \
+   tag: "small" "+ font_size=8";                                           \
+   tag: "smaller" "+ font_size=7";                                         \
+   tag: "name" "+ color=#505050 font_weight=Bold";                         \
+   tag: "val" "+ color=#505050";                                           \
+   tag: "info" "+ color=#1D456460 style=glow glow_color=#1D456418";        \
+   tag: "success" "+ color=#00ff0060 style=glow glow_color=#00ff0018";     \
+   tag: "warning" "+ color=#ff7c0060 style=glow glow_color=#ff7c0018";     \
+   tag: "failure" "+ color=#ff000060 style=glow glow_color=#ff000018";     \
+   tag: "code" "+ style=shadow,bottom shadow_color=#18181819 font=Mono color=#505050"; \
+   tag: "comment" "+ color=#002800";                                       \
+   tag: "string" "+ color=#300504";                                        \
+   tag: "number" "+ color=#202008 font_weight=Bold";                       \
+   tag: "brace" "+ color=#000000";                                         \
+   tag: "type" "+ color=#101820";                                          \
+   tag: "class" "+ color=#121c20 font_weight=Bold";                        \
+   tag: "function" "+ color=#121c20 font_weight=Bold";                     \
+   tag: "param" "+ color=#505050";                                         \
+   tag: "keyword" "+ color=#201200 font_weight=Bold";                      \
+   tag: "preprocessor" "+ color=#101820 font_weight=Bold";                 \
+   tag: "line_added" "+ color=#002800";                                    \
+   tag: "line_removed" "+ color=#300504";                                  \
+   tag: "line_changed" "+ color=#201200";

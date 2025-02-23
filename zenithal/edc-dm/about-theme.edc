@@ -1,0 +1,225 @@
+group { name: "e/theme/about";
+   // data.item: "borderless" "1";
+   // data.item: "shaped" "1";
+   images.image: "bevel_dark_out.png" COMP;
+   images.image: "e_about_background.jpg" COMP;
+   images.image: "screen_circular_shadow.png" COMP;
+   images.image: "button_normal.png" COMP;
+   images.image: "button_clicked.png" COMP;
+   styles {
+      style { name: "about_theme_style";
+         base: "font="FN" font_size=10 align=center text_class=tb_plain color=#7993a0af style=shadow,bottom shadow_color=#00000020 wrap=word";
+         tag: "hilight" "+ font="FN" text_class=tb_light style=glow color=#244a57ff glow_color=#244a5718 align=center glow2_color=#244a5712";
+         tag: "title" "+ font_size=16 font="FN" text_class=tb_big";
+         tag: "/title" "- \n \n";
+         tag: "br" "\n";
+      }
+      style { name: "about_theme_style_left";
+         base: "font="FN" font_size=12 align=left text_class=tb_plain color=#7993a08f style=shadow,bottom shadow_color=#00000020 wrap=word";
+         tag: "hilight" "+ font="FN" text_class=tb_light style=glow color=#244a57ff glow_color=#244a5718 align=left glow2_color=#244a5712";
+         tag: "title" "+ font_size=16 font="FN" text_class=tb_big";
+         tag: "/title" "- \n \n";
+         tag: "br" "\n";
+      }
+   }
+   min: 220 220;
+   max: 220 220;
+   parts {
+      part { name: "sizer"; type: SPACER;
+         scale: 1;
+         description { state: "default" 0.0;
+            min: 220 220;
+         }
+      }
+      /*part { name: "bg";
+         description { state: "default" 0.0;
+            image.normal: "bg_radgrad.png";
+            image.scale_hint: STATIC;
+            fill.smooth: 0;
+            ASPECT_FILL((1024/653))
+         }*/
+     part { name: "bg";
+        description { state: "default" 0.0;
+           image.normal: "e_about_background.jpg";
+           image.scale_hint: STATIC;
+           fill.smooth: 0;
+           ASPECT_FILL((1024/653))
+        }
+      }
+      part { name: "name"; type: TEXT; mouse_events: 0;
+         effect: GLOW;
+         scale: 1;
+         description { state: "default" 0.0;
+            fixed: 1 1;
+            color: 215 221 222 64;
+            color2: 255 255 255 12;
+            color3: 255 255 255 64;
+            rel1.relative: 0.55 0.20;
+            rel2.relative: 0.85 0.5;
+            text { font: "Megrim"; size: 32;
+               text: "Ice";
+               align: 0.0 1.0;
+               text_class: "list_item";
+            }
+         }
+      }
+      part { name: "name2"; type: TEXTBLOCK; mouse_events: 0;
+         scale:1;
+         description { state: "default" 0.0;
+            fixed: 1 1;
+            max: 20000 20000;
+            min: 200 0;
+            rel1.relative: 0.0 0.6;
+            rel2.relative: 1.0 0.8;
+            align: 0.0 1.0;
+            text {style: "about_theme_style";
+               min: 0 1;
+               align: 0.0 1.0;
+               text: "Wallpaper by <hilight>SiriusLee</> https://wall.alphacoders.com/big.php?i=963675<br>"
+               "Soundtrack: <hilight>https://www.youtube.com/watch?v=tlWGioCioCQ</>";
+            }
+         }
+      }
+      part { name: "name3"; type: TEXTBLOCK; mouse_events: 0;
+         scale:1;
+         description { state: "default" 0.0;
+            fixed: 1 1;
+            max: 20000 20000;
+            min: 160 0;
+            rel1.relative: 0.1 0.1;
+            rel2.relative: 0.1 0.2;
+            align: 0.1 0.2;
+            text {style: "about_theme_style_left";
+               min: 0 1;
+               align: 0.0 0.5;
+               text: "Beyond the dark <br>"
+               "It Crests the oceans waves<br>"
+               "A majestic ark<br>"
+               "Drifting through the haze<br>";
+            }
+         }
+      }
+      part { name: "shadow"; mouse_events: 0;
+         description { state: "default" 0.0;
+            rel1.relative: 0.0 0.0;
+            rel2.relative: 1.0 1.0;
+            image.normal: "screen_circular_shadow.png";
+            fill.smooth: 0;
+         }
+      }
+      part { name: "bevel";
+         description { state: "default" 0.0;
+            image.normal: "bevel_dark_out.png";
+            image.border: 1 1 1 1;
+            image.middle: 0;
+            fill.smooth: 0;
+         }
+      }
+      part { name: "base";
+         description { state: "default" 0.0;
+            image.normal: "button_normal.png";
+            image.border: 4 4 3 5;
+            image.middle: SOLID;
+            rel1.offset: -6 -6;
+            rel1.to: "e.text.label";
+            rel2.offset: 5 5;
+            rel2.to: "e.text.label";
+            fill.smooth: 0;
+                     }
+         description { state: "clicked" 0.0;
+            inherit: "default" 0.0;
+            image.normal: "button_clicked.png";
+            image.border: 5 5 4 6;
+         }
+      }
+      part { name: "e.text.label"; type: TEXT; mouse_events: 0;
+         effect: SHADOW BOTTOM;
+         scale: 1;
+         description { state: "default" 0.0;
+            rel1.offset: -14 -14;
+            rel1.relative: 1.0 1.0;
+            rel2.offset: -14 -14;
+            rel2.relative: 1.0 1.0;
+            color: FN_COL_DEFAULT;
+            color_class: "button_text";
+            align: 1.0 1.0;
+            min: 85 0;
+            text { font: FN; size: 10;
+               min: 1 1;
+			   ellipsis: -1;
+               align: 0.5 0.5;
+               text_class: "button";
+            }
+            fixed: 1 1;
+         }
+      }
+      part { name: "base2";
+         description { state: "default" 0.0;
+            image.normal: "button_normal.png";
+            image.border: 4 4 3 5;
+            image.middle: SOLID;
+            rel1.offset: -6 -6;
+            rel1.to: "e.text.theme";
+            rel2.offset: 5 5;
+            rel2.to: "e.text.theme";
+            fill.smooth: 0;
+                     }
+         description { state: "clicked" 0.0;
+            inherit: "default" 0.0;
+            image.normal: "button_clicked.png";
+            image.border: 5 5 4 6;
+         }
+      }
+      part { name: "e.text.theme"; type: TEXT; mouse_events: 0;
+         effect: SHADOW BOTTOM;
+         scale: 1;
+         description { state: "default" 0.0;
+            rel1.offset: 13 -14;
+            rel1.relative: 0.0 1.0;
+            rel2.offset: 13 -14;
+            rel2.relative: 0.0 1.0;
+            color: FN_COL_DEFAULT;
+            color_class: "button_text";
+            align: 0.0 1.0;
+            min: 85 0;
+            text { font: FN; size: 10;
+               min: 1 1;
+			   ellipsis: -1;
+               align: 0.5 0.5;
+               text_class: "button";
+            }
+            fixed: 1 1;
+         }
+      }
+   }
+   programs {
+      program {
+         signal: "mouse,down,1*"; source: "base";
+         action: STATE_SET "clicked" 0.0;
+         target: "base";
+      }
+      program {
+         signal: "mouse,up,1"; source: "base";
+         action: STATE_SET "default" 0.0;
+         target: "base";
+      }
+      program {
+         signal: "mouse,clicked,1*"; source: "base";
+         action: SIGNAL_EMIT "e,action,close" "";
+      }
+      program {
+         signal: "mouse,down,1*"; source: "base2";
+         action: STATE_SET "clicked" 0.0;
+         target: "base2";
+      }
+      program {
+         signal: "mouse,up,1"; source: "base2";
+         action: STATE_SET "default" 0.0;
+         target: "base2";
+      }
+      program {
+         signal: "mouse,clicked,1*"; source: "base2";
+         action: SIGNAL_EMIT "e,action,settings,theme" "";
+      }
+   }
+}

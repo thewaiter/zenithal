@@ -1,0 +1,13 @@
+group { name: "e/desktop/background";
+   images.image: "e_wallpaper.jpg" COMP;
+   parts {
+      part { name: "bg";
+         description { state: "default" 0.0;
+            image.normal: "e_wallpaper.jpg";
+            image.scale_hint: STATIC;
+            fill.smooth: 0;
+            ASPECT_FILL((1024/653))
+         }
+      }
+   }
+}

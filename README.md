@@ -1,2 +1,5 @@
-# zenithal
-Ice based theme for Moksha desktop
+# MokshaZenithal
+
+Moksha theme based on ice theme by Simotek
+
+https://github.com/simotek/Enlightenment-Themes
