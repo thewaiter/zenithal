@@ -4,7 +4,7 @@ group { name: "e/widgets/about/main";
    images.image: "bg_radgrad.png" COMP;
    images.image: "dot_pattern.png" COMP;
    images.image: "bevel_dark_out.png" COMP;
-   images.image: "vgrad_med_lighter.png" COMP;
+   images.image: "vgrad_med_lighter_square.png" COMP;
    images.image: "bevel_out.png" COMP;
    images.image: "shine.png" COMP;
    images.image: "shadow_square_tiny.png" COMP;
@@ -140,7 +140,7 @@ group { name: "e/widgets/about/main";
       }
       part { name: "top_base";
          description { state: "default" 0.0;
-            image.normal: "vgrad_med_lighter.png";
+            image.normal: "vgrad_med_lighter_square.png";
             rel2.to_y: "e.text.title";
             rel2.offset: -1 3;
             fill.smooth: 0;
