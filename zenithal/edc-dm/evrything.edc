@@ -1,5 +1,5 @@
 group { name: "e/modules/everything/main";
-   images.image: "vgrad_med_lighter.png" COMP;
+   images.image: "vgrad_med_lighter_square.png" COMP;
    images.image: "bevel_out.png" COMP;
    images.image: "shine.png" COMP;
    parts {
@@ -15,7 +15,7 @@ group { name: "e/modules/everything/main";
       }
       part { name: "base";
          description { state: "default" 0.0;
-            image.normal: "vgrad_med_lighter.png";
+            image.normal: "vgrad_med_lighter_square.png";
             min: 320 64;
             rel2.relative: 1.0 0.0;
             align: 0.5 0.0;
