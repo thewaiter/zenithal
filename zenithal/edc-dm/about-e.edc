@@ -204,7 +204,7 @@ group { name: "e/widgets/about/main";
             rel2.offset: 5 5;
             rel2.to: "e.text.label";
             fill.smooth: 0;
-                     }
+         }
          description { state: "clicked" 0.0;
             inherit: "default" 0.0;
             image.normal: "button_clicked.png";
