@@ -1,5 +1,5 @@
 group { name: "e/widgets/toolbar";
-   images.image: "vgrad_med_lighter.png" COMP;
+   images.image: "vgrad_med_lighter_square.png" COMP;
    images.image: "bevel_out.png" COMP;
    images.image: "shine.png" COMP;
    images.image: "shadow_square_tiny.png" COMP;
@@ -19,11 +19,12 @@ group { name: "e/widgets/toolbar";
       }
       part { name: "base";
          description { state: "default" 0.0;
-            image.normal: "vgrad_med_lighter.png";
+            image.normal: "vgrad_med_lighter_square.png";
             rel1.offset: 2 2;
             rel2.offset: -3 -3;
             fill.smooth: 0;
-            TILED_HORIZ(120)
+            image.border: 12 12 12 12;
+            //~ TILED_HORIZ(120)
          }
       }
       part { name: "clipper"; type: RECT;
