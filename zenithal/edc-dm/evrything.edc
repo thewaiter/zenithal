@@ -905,7 +905,7 @@ group { name: "e/modules/everything/thumbview/main/scrollframe";
    images.image: "shadow_square_tiny.png" COMP;
    images.image: "glow_small.png" COMP;
    images.image: "runner_glow_vert.png" COMP;
-   images.image: "vgrad_med_lighter.png" COMP;
+   images.image: "vgrad_med_lighter_square.png" COMP;
    images.image: "holes_tiny_vert.png" COMP;
    images.image: "holes_tiny_glow_vert.png" COMP;
    parts {
@@ -1168,7 +1168,7 @@ group { name: "e/modules/everything/thumbview/main/scrollframe";
             rel1.to: "e.dragable.vbar";
             rel2.offset: -3 -1;
             rel2.to: "e.dragable.vbar";
-            image.normal: "vgrad_med_lighter.png";
+            image.normal: "vgrad_med_lighter_square.png";
             fill.smooth: 0;
             min: 5 13;
             TILED_HORIZ(120)
