@@ -11,13 +11,14 @@ group { name: "e/widgets/dialog/main";
          }
          description { state: "noresize" 0.0;
             inherit: "default";
-            rel2.offset: 0 -17;
+            rel2.offset: 0 -10;
          }
       }
       part { name: "bottom"; 
          description { state: "default" 0.0;
             rel1.to: "base";
             rel1.relative: 0.0 1.0;
+            rel1.offset: 0 -10;
             image.normal: "vgrad_med_lighter_bottom.png";
             image.border: 12 12 12 12;
             fill.smooth: 0;
