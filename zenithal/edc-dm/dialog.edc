@@ -7,6 +7,10 @@ group { name: "e/widgets/dialog/main";
          description { state: "default" 0.0;
             color_class: "dialog_base";
             color: 197 196 196 255;
+            rel2.offset: 0 0;
+         }
+         description { state: "noresize" 0.0;
+            inherit: "default";
             rel2.offset: 0 -17;
          }
       }
@@ -113,6 +117,16 @@ group { name: "e/widgets/dialog/main";
          action: STATE_SET "default" 0.0;
          target: "e.swallow.icon";
          target: "e.swallow.content";
+      }
+      program {
+         signal: "e,state,resizable"; source: "e";
+         action: STATE_SET "default" 0.0;
+         target: "base";
+      }
+      program {
+         signal: "e,state,no_resizable"; source: "e";
+         action: STATE_SET "noresize" 0.0;
+         target: "base";
       }
    }
 }
