@@ -1,11 +1,22 @@
 group { name: "e/widgets/dialog/main";
    images.image: "bevel_dark_out.png" COMP;
    images.image: "separator_horiz.png" COMP;
+   data.item: "shaped" "1";
    parts {
       part { name: "base"; type: RECT;
          description { state: "default" 0.0;
             color_class: "dialog_base";
             color: 197 196 196 255;
+            rel2.offset: 0 -17;
+         }
+      }
+      part { name: "bottom"; 
+         description { state: "default" 0.0;
+            rel1.to: "base";
+            rel1.relative: 0.0 1.0;
+            image.normal: "vgrad_med_lighter_bottom.png";
+            image.border: 12 12 12 12;
+            fill.smooth: 0;
          }
       }
       part { name: "bevel";
