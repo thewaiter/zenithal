@@ -1,4 +1,4 @@
-group{
+group {
    images.image: "e_wallpaper_thumb.png" COMP;
       name: "icon";
       max: 24 24;
@@ -8,15 +8,14 @@ group{
              mouse_events: 0;
              type: IMAGE;
              description {
-                  state: "default" 0.0;
-                  image.normal: "e_wallpaper_thumb.png";
+                state: "default" 0.0;
+                image.normal: "e_wallpaper_thumb.png";
              }
           }
       }
 }
 
 group { name: "e/desktop/background";
-  //~ data.item: "noanimation" "0";
   images.image: "e_wallpaper.png" COMP;
   data { item: "style" "4"; }
   max: 2062 1124;
@@ -24,17 +23,17 @@ group { name: "e/desktop/background";
   parts {
     part { name: "bg"; mouse_events: 0; type: IMAGE;
       description { state: "default" 0.0;
-      color: 0 0 0 255;
-      aspect: 1.600000000 1.600000000; 
-      aspect_preference: NONE;
-      image {
+        color: 0 0 0 255;
+        aspect: 1.6 1.6; 
+        aspect_preference: NONE;
+        image {
           normal: "e_wallpaper.png";
           scale_hint: STATIC;
         }
       }
       description { state: "show" 0.0;
-      inherit: "default";
-      color: 255 255 255 255;
+        inherit: "default";
+        color: 255 255 255 255;
       }
     }
   }
