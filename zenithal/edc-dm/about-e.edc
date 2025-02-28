@@ -9,7 +9,7 @@ group { name: "e/widgets/about/main";
    images.image: "shine.png" COMP;
    images.image: "shadow_square_tiny.png" COMP;
    images.image: "screen_circular_shadow.png" COMP;
-   images.image: "logo_light_bottom.png" COMP;
+   images.image: "bodhilogo-simple_bottom.png" COMP;
    images.image: "button_normal.png" COMP;
    images.image: "button_clicked.png" COMP;
    styles {
@@ -130,12 +130,14 @@ group { name: "e/widgets/about/main";
       }
       part { name: "logo";
          description { state: "default" 0.0;
-            image.normal: "logo_light_bottom.png";
+            image.normal: "bodhilogo-simple_bottom.png";
             image.scale_hint: STATIC;
-            FIXED_SIZE(263,100);
+            fill.smooth: 1;
+            color: 255 255 255 128;
+            FIXED_SIZE(450,450);
             rel1.to: "top_base";
             rel2.to: "top_base";
-            align: 0.5 0.25;
+            align: 0.5 0.0;
          }
       }
       part { name: "top_base";
