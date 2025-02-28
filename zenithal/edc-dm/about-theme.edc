@@ -54,10 +54,10 @@ group { name: "e/theme/about";
             color: 215 221 222 64;
             color2: 255 255 255 12;
             color3: 255 255 255 64;
-            rel1.relative: 0.55 0.20;
+            rel1.relative: 0.30 0.20;
             rel2.relative: 0.85 0.5;
-            text { font: "Megrim"; size: 32;
-               text: "Ice";
+            text { font: "Megrim"; size: 28;
+               text: "Zenithal";
                align: 0.0 1.0;
                text_class: "list_item";
             }
@@ -75,8 +75,9 @@ group { name: "e/theme/about";
             text {style: "about_theme_style";
                min: 0 1;
                align: 0.0 1.0;
-               text: "Wallpaper by <hilight>SiriusLee</> https://wall.alphacoders.com/big.php?i=963675<br>"
-               "Soundtrack: <hilight>https://www.youtube.com/watch?v=tlWGioCioCQ</>";
+               text: "Wallpaper by <hilight>Martin Sedmák</><br>"
+               "Moksha theme based on Simotek's Ice theme by "
+               "<hilight>the_waiter</>";
             }
          }
       }
@@ -92,10 +93,8 @@ group { name: "e/theme/about";
             text {style: "about_theme_style_left";
                min: 0 1;
                align: 0.0 0.5;
-               text: "Beyond the dark <br>"
-               "It Crests the oceans waves<br>"
-               "A majestic ark<br>"
-               "Drifting through the haze<br>";
+               text: "Golden peaks in dawn’s embrace, <br>"
+               "Sunrise paints the sky with grace.<br>";
             }
          }
       }
