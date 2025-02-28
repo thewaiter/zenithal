@@ -258,7 +258,6 @@ group { name: "e/widgets/border/default/border";
             fill.smooth: 0;
          }
       }
-
       part { name: "e.text.title"; type: TEXT; mouse_events: 0;
          scale: 1;
          effect: SHADOW BOTTOM;
@@ -714,7 +713,7 @@ group { name: "e/widgets/border/default/border";
             FIXED_SIZE(69, 5)
          }
       }
-           part { name: "procstats"; type: RECT;
+      part { name: "procstats"; type: RECT;
          mouse_events: 0;
          description { state: "default" 0.0;
             rel1.to_x: "e.procstats.swallow";
@@ -1042,8 +1041,8 @@ group { name: "e/widgets/border/left_controls/border";
             rel2.relative: 0.0 0.0;
             rel2.to_x: "e.event.icon";
             text.ellipsis: 0;
-            }
          }
+      }
       part { name: "title2"; type: TEXT;
          description { state: "default" 0.0;
             color_class: "border_title_active";
