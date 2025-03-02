@@ -327,7 +327,7 @@ group { name: "elm/check/base/toggle";
    images.image: "inset_shadow_tiny.png" COMP;
    images.image: "bevel_in.png" COMP;
    images.image: "bevel_out.png" COMP;
-   images.image: "vgrad_med_lighter.png" COMP;
+   images.image: "vgrad_med_lighter_square.png" COMP;
    images.image: "shadow_square_tiny.png" COMP;
    images.image: "glow_small.png" COMP;
    
@@ -631,7 +631,7 @@ group { name: "elm/check/base/toggle";
          description { state: "default" 0.0;
             rel1.to: "button";
             rel2.to: "button";
-            image.normal: "vgrad_med_lighter.png";
+            image.normal: "vgrad_med_lighter_square.png";
             fill.smooth: 0;
             TILED_HORIZ(120)
          }
