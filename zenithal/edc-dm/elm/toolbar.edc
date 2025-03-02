@@ -1,6 +1,6 @@
 // === toolbar default base with scrolling arrows etc.
 group { name: "elm/toolbar/base/default";
-   images.image: "vgrad_med_lighter.png" COMP;
+   images.image: "vgrad_med_lighter_square.png" COMP;
    images.image: "bevel_out.png" COMP;
    images.image: "shine.png" COMP;
    images.image: "shadow_square_tiny.png" COMP;
@@ -24,7 +24,7 @@ group { name: "elm/toolbar/base/default";
       }
       part { name: "base";
          description { state: "default" 0.0;
-            image.normal: "vgrad_med_lighter.png";
+            image.normal: "vgrad_med_lighter_square.png";
             rel1.offset: 0 0;
             rel2.offset: -1 -1;
             fill.smooth: 0;
@@ -1708,7 +1708,7 @@ group { name: "elm/toolbar/object/default";
 // === item: the more PANEL that slides out under the toolbar
 // XXX: vert vs horiz (should emit)
 group { name: "elm/toolbar/more/default";
-   images.image: "vgrad_med_lighter.png" COMP;
+   images.image: "vgrad_med_lighter_square.png" COMP;
    images.image: "bevel_out.png" COMP;
    images.image: "shine.png" COMP;
    images.image: "shadow_square_tiny.png" COMP;
@@ -1735,7 +1735,7 @@ group { name: "elm/toolbar/more/default";
       }
       part { name: "base";
          description { state: "default" 0.0;
-            image.normal: "vgrad_med_lighter.png";
+            image.normal: "vgrad_med_lighter_square.png";
             rel2.relative: 1.0 0.0;
             rel1.offset: 2 2;
             rel2.offset: -3 1;
