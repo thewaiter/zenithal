@@ -1,6 +1,6 @@
 group { name: "e/init/splash";
    images.image: "screen_circular_shadow.png" COMP;
-   images.image: "bg_radgrad.png" COMP;
+   images.image: "e_wallpaper_init.jpg" COMP;
    images.image: "dot_pattern.png" COMP;
    images.image: "bodhilogo-simple.png" COMP;
    images.image: "bodhilogo-simple_glow.png" COMP;
@@ -20,7 +20,7 @@ group { name: "e/init/splash";
       }
       part { name: "bg";
          description { state: "default" 0.0;
-            image.normal: "bg_radgrad.png";
+            image.normal: "e_wallpaper_init.jpg";
             image.scale_hint: STATIC;
             fill.smooth: 0;
             ASPECT_FILL((1024/653))
@@ -37,7 +37,7 @@ group { name: "e/init/splash";
             image.normal: "bodhilogo-simple.png";
             rel1.relative: 0.5 0.4;
             rel2.relative: 0.5 0.4;
-            FIXED_SIZE(127, 127)
+            FIXED_SIZE(256, 256)
          }
       }
       part { name: "logo_glow";
@@ -99,6 +99,7 @@ group { name: "e/init/splash";
             rel2.relative: 1.0 1.0;
             rel2.offset: -4  -4;
             color: FN_COL_HIGHLIGHT;
+            color: 230 230 250 255;
             text { font: FN; size: 8;
                text: "0.19";
                min: 1 1;
@@ -295,6 +296,7 @@ group { name: "e/init/splash";
       part { name: "led0"; type: RECT;
          description { state: "default" 0.0;
             rel1.relative: 0.5 1.0;
+            rel1.offset: 0 30;
             rel1.to: "logo";
             rel2.relative: 0.5 1.0;
             rel2.to: "logo";
