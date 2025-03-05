@@ -51,8 +51,8 @@ group { name: "e/widgets/syscon/main";
       part { name: "base";
          description { state: "default" 0.0;
             image.normal: "button_normal.png";
-            image.border: 4 4 3 5;
-            image.middle: SOLID;
+            image.border: 14 14 13 15;
+            //~ image.middle: SOLID;
             rel1.offset: -6 -6;
             rel1.to: "e.text.label";
             rel2.offset: 5 5;
@@ -62,7 +62,7 @@ group { name: "e/widgets/syscon/main";
          description { state: "clicked" 0.0;
             inherit: "default" 0.0;
             image.normal: "button_clicked.png";
-            image.border: 5 5 4 6;
+            image.border: 15 15 14 16;
          }
       }
       part { name: "e.text.label"; type: TEXT; mouse_events: 0;
@@ -118,13 +118,13 @@ group { name: "e/widgets/syscon/item/button";
    alias: "e/desklock/pin_button";
    images.image: "button_normal.png" COMP;
    images.image: "button_clicked.png" COMP;
-   images.image: "win_glow.png" COMP;
+   images.image: "win_glow_round.png" COMP;
    parts {
       part { name: "base";
          description { state: "default" 0.0;
             image.normal: "button_normal.png";
-            image.border: 4 4 3 5;
-            image.middle: SOLID;
+            image.border: 14 14 13 15;
+            //~ image.middle: SOLID;
             rel1.offset: -1 0;
             rel2.offset: 0 1;
             fill.smooth: 0;
@@ -133,7 +133,7 @@ group { name: "e/widgets/syscon/item/button";
          description { state: "clicked" 0.0;
             inherit: "default" 0.0;
             image.normal: "button_clicked.png";
-            image.border: 5 5 4 6;
+            image.border: 15 15 14 16;
          }
       }
       part { name: "icon_clip"; type: RECT;
@@ -213,7 +213,7 @@ group { name: "e/widgets/syscon/item/button";
       }
       part { name: "glow"; mouse_events: 0;
          description { state: "default" 0.0;
-            image.normal: "win_glow.png";
+            image.normal: "win_glow_round.png";
             image.border: 9 9 9 9;
             image.middle: 0;
             rel1.to: "base";
