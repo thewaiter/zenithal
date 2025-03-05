@@ -91,8 +91,8 @@ group { name:"e/modules/tasks/item";
          clip_to: "clip";
          description { state: "default" 0.0;
             image.normal: "button_normal.png";
-            image.border: 4 4 3 5;
-            image.middle: SOLID;
+            image.border: 14 14 13 15;
+            //~ image.middle: SOLID;
             rel1.offset: -3 -2;
             rel1.to: "sel_base";
             rel2.offset: 2 3;
@@ -102,7 +102,7 @@ group { name:"e/modules/tasks/item";
          description { state: "clicked" 0.0;
             inherit: "default" 0.0;
             image.normal: "button_clicked.png";
-            image.border: 5 5 4 6;
+            image.border: 15 15 14 16;
          }
       }
       part { name: "e.text.label"; type: TEXT; mouse_events: 0;
