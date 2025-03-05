@@ -62,10 +62,10 @@
          scale: 1;
          clip_to: "label_clip";
          description { state: "default" 0.0;
-            rel1.offset: 6 5;
+            rel1.offset: 8 5;
             rel1.to_x: "base";
             rel1.to_y: "base";
-            rel2.offset: -7 -7;
+            rel2.offset: -9 -7;
             rel2.to: "base";
             color_class: "button_text";
             color3: 255 255 255 255;
