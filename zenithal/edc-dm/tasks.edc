@@ -2,11 +2,11 @@ group { name:"e/modules/tasks/item";
    images.image: "button_normal.png" COMP;
    images.image: "button_clicked.png" COMP;
    images.image: "shadow_rounded_horiz.png" COMP;
-   images.image: "vgrad_med_dark.png" COMP;
+   images.image: "vgrad_med_dark_round.png" COMP;
    images.image: "bevel_out.png" COMP;
    images.image: "shine.png" COMP;
    images.image: "glow_small.png" COMP;
-   images.image: "horizontal_separated_bar_glow.png" COMP;
+   images.image: "horizontal_separated_bar_glow_round.png" COMP;
    parts {
       part { name: "sel_shadow"; mouse_events: 0;
          clip_to: "sel_clip";
@@ -25,9 +25,10 @@ group { name:"e/modules/tasks/item";
          description { state: "default" 0.0;
             rel1.to: "sel_base";
             rel2.to: "sel_base";
-            image.normal: "glow_small.png";
-            image.border: 7 7 7 7;
+            image.normal: "win_glow_round.png";
+            image.border: 9 9 9 9;
             fill.smooth: 0;
+            image.middle: 0;
             color: 255 255 255 0;
          }
          description { state: "visible" 0.0;
@@ -48,9 +49,10 @@ group { name:"e/modules/tasks/item";
          description { state: "default" 0.0;
             rel1.offset: 3 3;
             rel2.offset: -4 -4;
-            image.normal: "vgrad_med_dark.png";
+            image.normal: "vgrad_med_dark_round.png";
+            image.border: 15 15 15 15;
             fill.smooth: 0;
-            TILED_HORIZ(120)
+            //~ TILED_HORIZ(120)
          }
       }
       part { name: "sel_bevel"; mouse_events: 0;
@@ -62,6 +64,7 @@ group { name:"e/modules/tasks/item";
             image.border: 1 1 1 1;
             image.middle: 0;
             fill.smooth: 0;
+            hid;
          }
       }
       part { name: "sel_label"; type: TEXT; mouse_events: 0;
@@ -176,12 +179,12 @@ group { name:"e/modules/tasks/item";
       part { name: "bar"; mouse_events: 0;
          clip_to: "sel_clip";
          description { state: "default" 0.0;
-            rel1.offset: -5 -10;
+            rel1.offset: -4 -6;
             rel1.relative: 0.0 1.0;
             rel1.to: "sel_base";
-            rel2.offset: 4 4;
+            rel2.offset: 3 7;
             rel2.to: "sel_base";
-            image.normal: "horizontal_separated_bar_glow.png";
+            image.normal: "horizontal_separated_bar_glow_round.png";
             image.border: 7 7 7 7;
             fill.smooth: 0;
             fixed: 0 1;
