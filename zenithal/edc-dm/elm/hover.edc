@@ -213,8 +213,8 @@ group { name: "elm/hover/base/popout";
             rel2.to: "elm.swallow.slot.left";
             rel2.offset: 4 4;
             image.normal: "button_normal.png";
-            image.border: 4 4 3 5;
-            image.middle: SOLID;
+            image.border: 14 14 13 15;
+            //~ image.middle: SOLID;
          }
          description { state: "visible" 0.0;
             inherit: "default" 0.0;
@@ -256,8 +256,8 @@ group { name: "elm/hover/base/popout";
             rel2.to: "elm.swallow.slot.right";
             rel2.offset: 4 4;
             image.normal: "button_normal.png";
-            image.border: 4 4 3 5;
-            image.middle: SOLID;
+            image.border: 14 14 13 15;
+            //~ image.middle: SOLID;
          }
          description { state: "visible" 0.0;
             inherit: "default" 0.0;
@@ -299,8 +299,8 @@ group { name: "elm/hover/base/popout";
             rel2.to: "elm.swallow.slot.top";
             rel2.offset: 4 4;
             image.normal: "button_normal.png";
-            image.border: 4 4 3 5;
-            image.middle: SOLID;
+            image.border: 14 14 13 15;
+            //~ image.middle: SOLID;
          }
          description { state: "visible" 0.0;
             inherit: "default" 0.0;
@@ -343,8 +343,8 @@ group { name: "elm/hover/base/popout";
             rel2.to: "elm.swallow.slot.bottom";
             rel2.offset: 4 4;
             image.normal: "button_normal.png";
-            image.border: 4 4 3 5;
-            image.middle: SOLID;
+            image.border: 14 14 13 15;
+            //~ image.middle: SOLID;
          }
          description { state: "visible" 0.0;
             inherit: "default" 0.0;
@@ -377,8 +377,8 @@ group { name: "elm/hover/base/popout";
             rel2.to: "elm.swallow.slot.middle";
             rel2.offset: 5 5;
             image.normal: "button_normal.png";
-            image.border: 4 4 3 5;
-            image.middle: SOLID;
+            image.border: 14 14 13 15;
+            //~ image.middle: SOLID;
          }
       }
       part { name: "elm.swallow.slot.middle"; type: SWALLOW;
@@ -536,7 +536,7 @@ group { name: "elm/hover/base/hoversel_vertical/default";
             rel2.offset: 9 4;
             image {
                normal: "button_normal.png";
-               border: 7 7 7 7;
+               border: 17 17 17 17;
             }
             image.middle: SOLID;
          }
@@ -550,7 +550,7 @@ group { name: "elm/hover/base/hoversel_vertical/default";
             rel2.offset: 9 4;
             image {
                normal: "button_normal.png";
-               border: 7 7 7 7;
+               border: 17 17 17 17;
             }
             image.middle: SOLID;
          }
@@ -885,7 +885,7 @@ group { name: "elm/hover/base/hoversel_horizontal/default";
             rel2.offset: 4 9;
             image {
                normal: "button_normal.png";
-               border: 7 7 7 7;
+               border: 17 17 17 17;
             }
             image.middle: SOLID;
          }
@@ -899,7 +899,7 @@ group { name: "elm/hover/base/hoversel_horizontal/default";
             rel2.offset: 10 9;
             image {
                normal: "button_normal.png";
-               border: 7 7 7 7;
+               border: 17 17 17 17;
             }
             image.middle: SOLID;
          }

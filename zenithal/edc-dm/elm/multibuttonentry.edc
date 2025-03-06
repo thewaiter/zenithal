@@ -101,8 +101,8 @@ group { name: "elm/multibuttonentry/btn/default";
       part { name: "base";
          description { state: "default" 0.0;
             image.normal: "button_normal.png";
-            image.border: 4 4 3 5;
-            image.middle: SOLID;
+            image.border: 14 14 13 15;
+            //~ image.middle: SOLID;
             rel1.offset: -1 0;
             rel2.offset: 0 1;
             fill.smooth: 0;
@@ -110,7 +110,7 @@ group { name: "elm/multibuttonentry/btn/default";
          description { state: "pressed" 0.0;
             inherit: "default" 0.0;
             image.normal: "button_clicked.png";
-            image.border: 5 5 4 6;
+            image.border: 15 15 14 16;
          }
       }
       part { name: "glow"; mouse_events: 0;

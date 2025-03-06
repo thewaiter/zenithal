@@ -158,8 +158,8 @@ group { name: "elm/actionslider/base/default";
             rel2.offset: 0 0;
             image {
                normal: "button_normal.png";
-               border: 4 4 3 5;
-               middle: SOLID;
+               border: 14 14 13 15;
+               //~ middle: SOLID;
             }
          }
          description { state: "clicked" 0.0;
