@@ -32,7 +32,7 @@ group { name: "e/widgets/radio";
             rel1.offset: -7 0;
             rel2.offset:  5 0;
             color: 255 255 255 128;
-            image.normal: "win_glow.png";
+            image.normal: "win_glow_round.png";
             image.border: 9 9 9 9;
             visible: 0;
             offscale;
