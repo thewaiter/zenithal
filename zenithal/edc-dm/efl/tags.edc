@@ -81,8 +81,8 @@ group { "efl/tags/btn";
       image { "base";
          desc { "default";
             image.normal: "button_normal.png";
-            image.border: 4 4 3 5;
-            image.middle: SOLID;
+            image.border: 14 14 13 15;
+            //~ image.middle: SOLID;
             rel1.offset: -1 0;
             rel2.offset: 0 1;
             fill.smooth: 0;
@@ -90,7 +90,7 @@ group { "efl/tags/btn";
          desc { "pressed";
             inherit: "default";
             image.normal: "button_clicked.png";
-            image.border: 5 5 4 6;
+            image.border: 15 15 14 16;
          }
       }
       image { "glow";
