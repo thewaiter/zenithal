@@ -254,8 +254,8 @@ group { name: "e/widgets/border/default/border";
             image.normal: "vgrad_med_lighter.png";
             rel2.to_y: "title2";
             rel2.offset: -1 0;
-            fill.smooth: 0;
-            image.border: 12 12 12 12;
+            fill.smooth: 1;
+            image.border: 15 15 15 15;
             color_class: "border_frame";
          }
          description { state: "focused" 0.0;
@@ -272,6 +272,7 @@ group { name: "e/widgets/border/default/border";
             rel1.to: "top";
             rel2.to: "top";
             fill.smooth: 0;
+            hid;
          }
       }
       part { name: "e.text.title"; type: TEXT; mouse_events: 0;
