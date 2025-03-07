@@ -140,7 +140,7 @@ group { name: "notification/main";
       }
      part { name: "base";
          description { state: "default" 0.0;
-            image.normal: "vgrad_med_rounded.png";
+            image.normal: "vgrad_med_lighter_round.png";
             image.border: 12 12 12 12;
             fill.smooth: 1;
             //~ rel1.offset: -10 0;
