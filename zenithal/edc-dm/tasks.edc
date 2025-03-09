@@ -52,7 +52,6 @@ group { name:"e/modules/tasks/item";
             image.normal: "vgrad_med_dark_round.png";
             image.border: 15 15 15 15;
             fill.smooth: 0;
-            //~ TILED_HORIZ(120)
          }
       }
       part { name: "sel_bevel"; mouse_events: 0;
@@ -64,7 +63,7 @@ group { name:"e/modules/tasks/item";
             image.border: 1 1 1 1;
             image.middle: 0;
             fill.smooth: 0;
-            hid;
+            visible: 0;
          }
       }
       part { name: "sel_label"; type: TEXT; mouse_events: 0;
@@ -95,7 +94,6 @@ group { name:"e/modules/tasks/item";
          description { state: "default" 0.0;
             image.normal: "button_normal.png";
             image.border: 14 14 13 15;
-            //~ image.middle: SOLID;
             rel1.offset: -3 -4;
             rel1.to: "sel_base";
             rel2.offset: 2 6;
@@ -384,6 +382,28 @@ group { name:"e/modules/tasks/item_vert";
             rel1.offset: 2 2;
             rel2.relative: 1.0 1.0;
             rel2.offset: -3 -3;
+         }
+      }
+      part { name: "e.swallow.icon"; type: SWALLOW; mouse_events: 0;
+         clip_to: "icon_clip";
+         description { state: "default" 0.0;
+            aspect: 1.0 1.0; aspect_preference: VERTICAL;
+            align: 0.0 0.5;
+            rel1.to: "icon";
+            rel2.to: "icon";
+            rel1.offset: 4 4;
+            rel2.offset: -6 -6;
+            color: 255 0 0 128;
+         }
+         description { state: "bounce1" 0.0;
+            inherit: "default" 0.0;
+            rel1.relative: 0.0 0.15;
+            rel2.relative: 1.0 1.15;
+         }
+         description { state: "bounce2" 0.0;
+            inherit: "default" 0.0;
+            rel1.relative: 0.0 -0.15;
+            rel2.relative: 1.0 0.85;
          }
       }
    }
