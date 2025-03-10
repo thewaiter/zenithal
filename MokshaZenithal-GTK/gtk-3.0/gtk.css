@@ -3741,7 +3741,7 @@ infobar button label {
  * Tooltips *
  ************/
 tooltip {
-  border-radius: 7px;
+  border-radius: 0;
   box-shadow: none;
 }
 
@@ -3903,7 +3903,7 @@ decoration:backdrop {
 }
 
 tooltip.csd decoration {
-  border-radius: 7px;
+  border-radius: 0;
   box-shadow: none;
 }
 
