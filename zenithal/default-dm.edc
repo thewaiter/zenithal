@@ -8,8 +8,8 @@ externals.external: "elm";
 // compat issues
 data.item: "version" "125";
 data.item: "efl_theme_base" "dark";
-//~ data.item: "icon-theme" "MokshaIce-Icons";
-//~ data.item: "gtk-theme" "MokshaIce-GTK";
+data.item: "icon-theme" "Delft-Gray";
+data.item: "gtk-theme" "MokshaZenithal";
 
 collections {
 #include "fonts-dm.edc"
