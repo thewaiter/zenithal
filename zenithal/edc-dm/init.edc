@@ -37,7 +37,7 @@ group { name: "e/init/splash";
             image.normal: "bodhilogo-simple.png";
             rel1.relative: 0.5 0.4;
             rel2.relative: 0.5 0.4;
-            FIXED_SIZE(256, 256)
+            FIXED_SIZE(196, 196)
          }
       }
       part { name: "logo_glow";
