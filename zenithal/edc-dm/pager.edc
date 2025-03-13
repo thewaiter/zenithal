@@ -250,10 +250,10 @@ group {
          description {
         state:    "default" 0.0;
         rel1 {
-           offset:   2    2;
+           offset:   7    7;
         }
         rel2 {
-           offset:   -3    -3;
+           offset:   -8   -8;
         }
      }
       }
