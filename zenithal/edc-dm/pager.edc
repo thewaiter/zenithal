@@ -253,7 +253,7 @@ group {
            offset:   7    7;
         }
         rel2 {
-           offset:   -8   -8;
+           offset:   -6   -7;
         }
      }
       }
