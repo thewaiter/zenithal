@@ -60,7 +60,6 @@ group { name: "e/modules/pager16/popup";
 }
 
 group { name: "e/modules/pager16/desk";
-   images.image: "vgrad_med_darker.png" COMP;
    images.image: "bevel_out.png" COMP;
    images.image: "bevel_in.png" COMP;
    images.image: "shine.png" COMP;
