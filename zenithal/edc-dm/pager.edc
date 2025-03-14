@@ -211,8 +211,8 @@ group {
      part { name: "e.swallow.content"; type: SWALLOW; clip_to: "clip";
         description {
           state: "default" 0.0;
-          rel1.offset:  10   10;
-          rel2.offset: -11  -10;
+          rel1.offset:  9   8;
+          rel2.offset: -8  -8;
         }
      }
      part { name: "title_glint_clip"; type: RECT; mouse_events: 0;
