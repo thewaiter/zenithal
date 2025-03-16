@@ -41,14 +41,12 @@ group { name: "e/shelf/default/base"; nomouse;
          description { state: "default" 0.0;
             image.normal: "vgrad_med.png";
             fill.smooth: 1;
-            //~ TILED_HORIZ(120)
             image.border: 12 12 12 12;
             color_class: "shelf_base";
          }
          description { state: "vert" 0.0;
             image.normal: "vgrad_tall.png";
             fill.smooth: 1;
-            //~ TILED_HORIZ(40)
             image.border: 12 12 12 12;
             color_class: "shelf_base";
          }
@@ -59,6 +57,7 @@ group { name: "e/shelf/default/base"; nomouse;
             image.border: 1 1 1 1;
             image.middle: 0;
             fill.smooth: 0;
+            visible: 0;
          }
       }
       part { name: "dots_start";
