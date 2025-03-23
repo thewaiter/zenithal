@@ -263,7 +263,6 @@ group { name: "e/modules/ibar/menu";
          target: "sizer";
          target: "clip";
       }
-
       program { signal: "e,action,show"; source: "e";
          action: STATE_SET "default" 0.0;
          target: "sizer";
@@ -274,7 +273,6 @@ group { name: "e/modules/ibar/menu";
       program { name: "show2";
          action: SIGNAL_EMIT "e,action,show,done" "";
       }
-
       program { signal: "e,action,hide"; source: "e";
          action: STATE_SET "hidden" 0.0;
          target: "sizer";
@@ -609,7 +607,7 @@ group { name: "e/modules/ibox/icon_overlay";
          scale: 1;
          desc { color: 0 0 0 0;
             rel1.offset: 4 4;
-            rel2.offset: -5 -5; 
+            rel2.offset: -5 -5;
             text {
                source: "e.text.label";
                text_source: "e.text.label";
