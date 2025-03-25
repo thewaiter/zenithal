@@ -215,9 +215,9 @@ group { name: "e/widgets/border/default/border";
             color_class: "border_bottom";
             color: 115 115 115 255;
             rel1.relative: 1.0 0.0;
-            rel1.offset: -5 20;
+            rel1.offset: 0 20;
             rel2.relative: 1.0 1.0;
-            rel2.offset: 0 -7;
+            rel2.offset: -5 -7;
             min: 5 0;
             fixed: 1 0;
          }
@@ -1365,12 +1365,22 @@ group { name: "e/widgets/border/noresize/border";
             rel2.relative: 1.0 1.0;
          }
       }
+      part { name: "left"; type: RECT;
+         description { state: "default" 0.0;
+            min: 0 0;
+         }
+      }
+      part { name: "right"; type: RECT;
+         description { state: "default" 0.0;
+            min: 0 0;
+         }
+      }
       part { name: "bottom"; type: RECT;
          description { state: "default" 0.0;
             rel1.relative: 0.0 1.0;
             rel1.offset: 0 -1;
+            rel2.offset: 0 -8;
             rel2.relative: 1.0 1.0;
-            min: 0 0;
             fixed: 0 1;
             visible: 0;
          }
@@ -1410,10 +1420,21 @@ group { name: "e/widgets/border/noresize_dialog/border";
             rel2.relative: 1.0 1.0;
          }
       }
+      part { name: "left"; type: RECT;
+         description { state: "default" 0.0;
+            min: 0 0;
+         }
+      }
+      part { name: "right"; type: RECT;
+         description { state: "default" 0.0;
+            min: 0 0;
+         }
+      }
       part { name: "bottom"; type: RECT;
          description { state: "default" 0.0;
             rel1.relative: 0.0 1.0;
             rel1.offset: 0 -1;
+            rel2.offset: 0 -8;
             rel2.relative: 1.0 1.0;
             min: 0 0;
             fixed: 0 1;
