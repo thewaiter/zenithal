@@ -229,6 +229,7 @@ group { name: "e/widgets/border/default/border";
          description { state: "max" 0.0;
             inherit: "default" 0.0;
             rel1.offset: 0 0;
+            rel2.offset: 0 0;
             min: 0 0;
             visible: 0;
          }
