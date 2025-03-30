@@ -67,6 +67,7 @@ group { name: "e/shelf/default/base"; nomouse;
             rel2.relative: 0.0 1.0;
             rel2.offset: 2 -3;
             FIXED_SIZE(4, 14)
+            hid;
          }
          description { state: "vert" 0.0;
             image.normal: "holes_horiz.png";
@@ -74,6 +75,7 @@ group { name: "e/shelf/default/base"; nomouse;
             rel2.relative: 1.0 0.0;
             rel2.offset: -3 5;
             FIXED_SIZE(14, 4)
+            hid;
          }
       }
       part { name: "dots_end";
@@ -83,6 +85,7 @@ group { name: "e/shelf/default/base"; nomouse;
             rel1.offset: -6 2;
             rel2.offset: -3 -3;
             FIXED_SIZE(4, 14)
+            hid;
          }
          description { state: "vert" 0.0;
             image.normal: "holes_horiz.png";
@@ -90,6 +93,7 @@ group { name: "e/shelf/default/base"; nomouse;
             rel1.offset: 2 -6;
             rel2.offset: -3 -3;
             FIXED_SIZE(14, 4)
+            hid;
          }
       }
       spacer { "sizer";
