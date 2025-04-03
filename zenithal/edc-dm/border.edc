@@ -259,11 +259,13 @@ group { name: "e/widgets/border/default/border";
             fill.smooth: 1;
             image.border: 15 15 15 15;
             color_class: "border_frame";
+            color: 170 170 170 255;
          }
          description { state: "focused" 0.0;
             inherit: "default" 0.0;
             image.normal: "vgrad_med_dark_color_round.png";
-            color_class: "border_frame_active";
+            //~ color_class: "border_frame_active";
+            color: 255 255 255 255;
          }
       }
       part { name: "bevel"; mouse_events: 0;
