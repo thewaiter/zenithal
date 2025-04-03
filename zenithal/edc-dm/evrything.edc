@@ -2,6 +2,7 @@ group { name: "e/modules/everything/main";
    images.image: "vgrad_med_lighter_square.png" COMP;
    images.image: "bevel_out.png" COMP;
    images.image: "shine.png" COMP;
+   data.item: "shaped" "2";
    parts {
       part { name: "list"; type: GROUP;
          source: "e/modules/everything/list";
@@ -15,13 +16,17 @@ group { name: "e/modules/everything/main";
       }
       part { name: "base";
          description { state: "default" 0.0;
-            image.normal: "vgrad_med_lighter_square.png";
+            image.normal: "vgrad_med_lighter.png";
+            image.border: 15 15 15 15;
             min: 320 64;
             rel2.relative: 1.0 0.0;
             align: 0.5 0.0;
             fill.smooth: 0;
-            TILED_HORIZ(120)
             fixed: 1 1;
+         }
+         description { state: "border" 0.0;
+           inherit: "default";
+           image.normal: "vgrad_med_lighter_square.png";
          }
       }
       part { name: "clipper"; type: RECT;
@@ -122,6 +127,11 @@ group { name: "e/modules/everything/main";
          target: "object_selector";
          target: "subject_selector";
          target: "action_selector";
+      }
+      program {
+         signal: "e,state,border_show"; source: "e";
+         action: STATE_SET "border" 0.00;
+         target: "base";
       }
    }
 }
