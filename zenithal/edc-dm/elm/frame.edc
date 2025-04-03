@@ -13,26 +13,23 @@ group { name: "elm/frame/base/default";
             fill.smooth: 0;
          }
       }
-      part { name: "base"; type: IMAGE;
+      part { name: "base"; type: RECT;
          description { state: "default" 0.0;
-            image.normal: "vgrad_med_lighter_bottom.png";
-            image.border: 15 15 15 15;
             rel1.relative: 0.0 1.0;
             rel1.offset: 2 0;
             rel1.to_y: "top";
             rel2.offset: -3 -3;
-            color: 255 255 255 255;
+            color: 197 196 196 255;
          }
       }
       part { name: "top";
          description { state: "default" 0.0;
-            image.normal: "vgrad_med_lighter.png";
-            image.border: 15 15 15 15;
+            image.normal: "vgrad_med_curved.png";
             rel1.offset: 2 2;
             rel2.to_y: "elm.text";
             rel2.offset: -3 -1;
             fill.smooth: 0;
-            //TILED_HORIZ(120)
+            TILED_HORIZ(120)
          }
       }
       part { name: "edge1";
