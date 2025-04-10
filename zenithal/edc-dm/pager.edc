@@ -75,7 +75,6 @@ group {
       public active;
       public drag;
    }
-   data.item: "shaped" "1";
    parts {
      part { name: "base"; type: RECT;
         description { state: "default" 0.0;
