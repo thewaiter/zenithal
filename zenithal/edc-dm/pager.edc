@@ -102,12 +102,10 @@ group {
           state: "default" 0.0;
           visible: 1;
           rel1.relative: 0.0  0.0;
-          rel1.offset:   0    0;
           rel2.relative: 0.5  1.0;
-          rel2.offset:   0   0;
           color: 255 255 255 255;
           image.normal: "e17_gadman_overlay_left.png";
-          image.border: 12 12 12 12;
+          image.border: 12 0 12 12;
           fill.smooth: 0;
         }
         description {
@@ -115,9 +113,7 @@ group {
           inherit: "default" 0.0;
           visible: 1;
           rel1.relative: 0.0  0.0;
-          rel1.offset:   0   0;
           rel2.relative: 0.0  1.0;
-          rel2.offset:   0   0;
           image.border: 12 0 12 12;
           color: 255 255 255 255;
         }
@@ -134,7 +130,7 @@ group {
           rel1.relative: 0.5  0.0;
           rel1.offset:   1  0;
           rel2.relative: 1.0  1.0;
-          rel2.offset:   0   0;
+          rel1.offset:   0  0;
           color: 255 255 255 255;
           image.normal: "e17_gadman_overlay_right.png";
           image.border: 0 12 12 12;
@@ -148,7 +144,6 @@ group {
           rel1.relative: 1.0  0.0;
           rel1.offset:   1   0;
           rel2.relative: 1.0  1.0;
-          rel2.offset:   0   0;
           image.border: 0 12 12 12;
         }
         description {
@@ -259,7 +254,7 @@ group {
           align: 1.0 0.5;
           max: 0 0;
           rel1.relative: 0.0  0.0;
-          rel1.offset: 1    1;
+          rel1.offset: 1   1;
           rel1.to: "overlay";
           rel2.relative: 0.0  1.0;
           rel2.offset: 1  -2;
@@ -279,7 +274,7 @@ group {
           rel1.relative: 0.0  0.0;
           rel1.offset:   1    1;
           rel2.relative: 0.0  1.0;
-          rel2.offset:   1    -2;
+          rel2.offset:   1   -2;
         }
         description {
           state:    "active2" 0.0;
@@ -292,7 +287,7 @@ group {
           rel1.relative: 1.0  0.0;
           rel1.offset:   -2   1;
           rel2.relative: 1.0  1.0;
-          rel2.offset:   -2   -2;
+          rel2.offset:   -2  -2;
         }
         description {
           state:   "active3" 0.0;
@@ -305,7 +300,7 @@ group {
           rel1.relative: 1.0  0.0;
           rel1.offset:   -2   1;
           rel2.relative: 1.0  1.0;
-          rel2.offset:   -2   -2;
+          rel2.offset:   -2  -2;
         }
      }
      part { name: "title_glint_3"; mouse_events: 0;
@@ -346,7 +341,7 @@ group {
         after:  "go_active_content";
       }
       program {
-        name:    "hide_focus_trick";
+        name:   "hide_focus_trick";
         action:  STATE_SET "hidden" 0.0;
         target: "focus_pager_left";
         target: "focus_pager_right";
@@ -364,9 +359,9 @@ group {
         signal:  "e,state,unselected";
         source:  "e";
         action:  STATE_SET "active" 0.0;
-        target: "focus_pager_left";
-        target: "focus_pager_right";
-        after:  "go_passive_1";
+        target:  "focus_pager_left";
+        target:  "focus_pager_right";
+        after:   "go_passive_1";
       }
       program {
         name:    "go_passive_1";
@@ -375,14 +370,14 @@ group {
         target:  "clip";
         target:  "sel";
         target:  "overlay";
-        after: "go_passive_2";
+        after:   "go_passive_2";
       }
       program {
         name:    "go_passive_2";
         action:  STATE_SET "default" 0.0;
         transition: SINUSOIDAL 1.0;
-        target: "focus_pager_left";
-        target: "focus_pager_right";
+        target:  "focus_pager_left";
+        target:  "focus_pager_right";
       }
       program {
         name:    "set_active";
