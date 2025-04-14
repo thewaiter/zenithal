@@ -29,7 +29,7 @@ group { name: "e/widgets/radio";
       }
       part { name: "focus";
          description { state: "default" 0.0;
-            rel1.offset: -7 0;
+            rel1.offset: -3 0;
             rel2.offset:  5 0;
             color: 255 255 255 128;
             image.normal: "win_glow_round.png";
