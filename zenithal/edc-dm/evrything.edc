@@ -126,7 +126,7 @@ group { name: "e/modules/everything/main";
    programs {
       program {
          signal: "e,state,object_selector_hide"; source: "e";
-         action: STATE_SET "default" 0.00;
+         action: STATE_SET "default" 0.0;
          transition: SINUSOIDAL 0.15;
          target: "object_selector";
          target: "subject_selector";
@@ -134,7 +134,7 @@ group { name: "e/modules/everything/main";
       }
       program {
          signal: "e,state,object_selector_show"; source: "e";
-         action: STATE_SET "wide" 0.00;
+         action: STATE_SET "wide" 0.0;
          transition: SINUSOIDAL 0.2;
          target: "object_selector";
          target: "subject_selector";
@@ -142,7 +142,7 @@ group { name: "e/modules/everything/main";
       }
       program {
          signal: "e,state,border_show"; source: "e";
-         action: STATE_SET "show" 0.00;
+         action: STATE_SET "show" 0.0;
          target: "base_fill";
       }
    }
@@ -639,7 +639,7 @@ group { name: "e/modules/everything/list";
       }
       program {
          signal: "e,state,border_show"; source: "e";
-         action: STATE_SET "border" 0.00;
+         action: STATE_SET "border" 0.0;
          target: "bar_base";
       }
    }
