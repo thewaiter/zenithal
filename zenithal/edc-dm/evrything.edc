@@ -34,11 +34,11 @@ group { name: "e/modules/everything/main";
             align: 0.5 0.0;
             fill.smooth: 0;
             fixed: 1 1;
-            hid;
+            visible: 0;
          }
          description { state: "show" 0.0;
-           inherit: "default";
-           vis;
+            inherit: "default";
+            visible: 1;
          }
       }
       part { name: "clipper"; type: RECT;
