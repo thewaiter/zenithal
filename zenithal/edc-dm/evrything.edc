@@ -24,9 +24,21 @@ group { name: "e/modules/everything/main";
             fill.smooth: 0;
             fixed: 1 1;
          }
-         description { state: "border" 0.0;
+      }
+      part { name: "base_fill";
+         description { state: "default" 0.0;
+            image.normal: "vgrad_med_lighter_square.png";
+            image.border: 15 15 15 15;
+            min: 320 64;
+            rel2.relative: 1.0 0.0;
+            align: 0.5 0.0;
+            fill.smooth: 0;
+            fixed: 1 1;
+            hid;
+         }
+         description { state: "show" 0.0;
            inherit: "default";
-           image.normal: "vgrad_med_lighter_square.png";
+           vis;
          }
       }
       part { name: "clipper"; type: RECT;
@@ -130,8 +142,8 @@ group { name: "e/modules/everything/main";
       }
       program {
          signal: "e,state,border_show"; source: "e";
-         action: STATE_SET "border" 0.00;
-         target: "base";
+         action: STATE_SET "show" 0.00;
+         target: "base_fill";
       }
    }
 }
