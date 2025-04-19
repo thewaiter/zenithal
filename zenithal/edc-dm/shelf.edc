@@ -106,10 +106,10 @@ group { name: "e/shelf/default/base"; nomouse;
             rel2.relative: 0.0 1.0;
          }
          description { state: "vert" 0.0;
-            rel1.offset: 1 2;
+            rel1.offset: 2 2;
             rel1.relative: 0.0 1.0;
             rel1.to_y: "dots_start";
-            rel2.offset: -2 -3;
+            rel2.offset: -5 -3;
             rel2.to_y: "dots_end";
             rel2.relative: 1.0 0.0;
          }
