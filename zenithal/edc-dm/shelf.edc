@@ -101,7 +101,7 @@ group { name: "e/shelf/default/base"; nomouse;
             rel1.offset: 2 3;
             rel1.relative: 1.0 0.0;
             rel1.to_x: "dots_start";
-            rel2.offset: -3 -4;
+            rel2.offset: -3 -5;
             rel2.to_x: "dots_end";
             rel2.relative: 0.0 1.0;
          }
