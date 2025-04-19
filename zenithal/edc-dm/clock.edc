@@ -392,16 +392,6 @@ group { name: "e/modules/clock/digital";
          color: 255 255 255 128; \
       } \
    }
-
-      //~ BASE ("ha", "h0-0", "digit_na.png")
-      //~ BASE ("hb", "h1-0", "digit_na.png")
-      //~ BASE ("ma", "m0-0", "digit_na.png")
-      //~ BASE ("mb", "m1-0", "digit_na.png")
-
-      //~ BASEC("sa", "secclip", "s0-0", "digit_na.png")
-      //~ BASEC("sb", "secclip", "s1-0", "digit_na.png")
-      //~ BASEC("aa", "ampmclip", "ap", "digit_nm.png")
-
       DIGIT ("h0", "hours1")
       DIGIT ("h1", "hours2")
       DIGIT ("m0", "mins1")
@@ -572,34 +562,9 @@ group { name: "e/modules/clock/main";
    images.image: "inset_round_shadow.png" COMP;
    images.image: "inset_round_shading.png" COMP;
    images.image: "tacho_hand_big.png" COMP;
-   //~ set { name: "tacho_hand_big";
-      //~ image { image: "tacho_hand_big.png" COMP; size: 73 73 99999 99999; }
-      //~ image { image: "tacho_hand_big2.png" COMP; size: 37 37 72 72; }
-      //~ image { image: "tacho_hand_big3.png" COMP; size: 19 19 36 36; }
-      //~ image { image: "tacho_hand_big4.png" COMP; size: 0 0 18 18; }
-   //~ }
    images.image: "tacho_hand_big_shadow.png" COMP;
    images.image: "tacho_hand_small_min.png" COMP;
-   //~ set { name: "tacho_hand_small_min";
-      //~ image { image: "tacho_hand_small_min.png" COMP; size: 73 73 99999 99999; }
-      //~ image { image: "tacho_hand_small_min2.png" COMP; size: 37 37 72 72; }
-      //~ image { image: "tacho_hand_small_min3.png" COMP; size: 19 19 36 36; }
-      //~ image { image: "tacho_hand_small_min4.png" COMP; size: 0 0 18 18; }
-   //~ }
    images.image: "knob_sz_24.png"  COMP;
-   //~ set { name: "knob";
-      //~ image { image: "knob_sz_24.png"  COMP; size: 31 31 32 32; }
-      //~ image { image: "knob_sz_22.png"  COMP; size: 29 29 30 30; }
-      //~ image { image: "knob_sz_20.png"  COMP; size: 27 27 28 28; }
-      //~ image { image: "knob_sz_18.png"  COMP; size: 25 25 26 26; }
-      //~ image { image: "knob_sz_16.png"  COMP; size: 23 23 24 24; }
-      //~ image { image: "knob_sz_14.png"  COMP; size: 21 21 22 22; }
-      //~ image { image: "knob_sz_12.png"  COMP; size: 19 19 20 20; }
-      //~ image { image: "knob_sz_10.png"  COMP; size: 17 17 18 18; }
-      //~ image { image: "knob_sz_08.png"  COMP; size: 15 15 16 16; }
-      //~ image { image: "knob_sz_06.png"  COMP; size: 13 13 14 14; }
-      //~ image { image: "knob_sz_04.png"  COMP; size:  0  0 12 12; }
-   //~ }
    min: 16 16;
    max: 160 160;
    script {
@@ -649,30 +614,10 @@ group { name: "e/modules/clock/main";
    parts {
       part { name: "base";
          description { state: "default" 0.0;
-            //~ rel1.relative: (25/380) (25/380);
-            //~ rel2.relative: (365/380) (365/380);
             aspect: 1.0 1.0; aspect_preference: BOTH;
             image.normal: "clock_base.png";
          }
       }
-      //~ part { name: "base-sh";
-         //~ description { state: "default" 0.0;
-            //~ rel1.to: "base";
-            //~ rel1.offset: 0 -1;
-            //~ rel2.to: "base";
-            //~ rel2.offset: -1 -2;
-            //~ image.normal: "inset_round_shadow.png";
-         //~ }
-      //~ }
-      //~ part { name: "base-hi";
-         //~ description { state: "default" 0.0;
-            //~ rel1.to: "base";
-            //~ rel1.offset: 0 1;
-            //~ rel2.to: "base";
-            //~ rel2.offset: -1 0;
-            //~ image.normal: "inset_round_hilight.png";
-         //~ }
-      //~ }
       part { name: "seconds-sh"; mouse_events: 0;
          description { state: "default" 0.0;
             image.normal: "tacho_hand_big_shadow.png";
