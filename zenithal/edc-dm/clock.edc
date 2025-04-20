@@ -616,6 +616,8 @@ group { name: "e/modules/clock/main";
          description { state: "default" 0.0;
             aspect: 1.0 1.0; aspect_preference: BOTH;
             image.normal: "clock_base.png";
+            rel1.offset: 2 2;
+            rel2.offset: -3 -3;
          }
       }
       part { name: "seconds-sh"; mouse_events: 0;
@@ -731,6 +733,7 @@ group { name: "e/modules/clock/main";
       part { name: "event"; type: RECT;
          description { state: "default" 0.0;
             color: 0 0 0 0;
+            rel.to: "base";
          }
       }
    }
