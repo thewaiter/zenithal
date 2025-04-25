@@ -158,7 +158,7 @@ group { name: "notification/main";
          clip_to: "clip";
          description { state: "default" 0.0;
             rel2.offset: -13 -13;
-            min: 300 160;
+            min: 300 170;
          }
       }
       part { name: "notification.swallow.app_icon"; type: SWALLOW; mouse_events: 0;
