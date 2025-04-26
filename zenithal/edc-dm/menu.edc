@@ -183,8 +183,6 @@ group { name: "e/widgets/menu/default/item_bg";
             image.normal: "bevel_horiz_out.png";
             image.border: 0 0 2 2;
             image.middle: 0;
-            rel1.offset: 7 -4;
-            rel2.offset: -7 5;
             fill.smooth: 0;
             visible: 0;
          }
