@@ -352,6 +352,60 @@ group { name:"e/modules/tasks/item";
 group { name:"e/modules/tasks/item_vert";
    inherit: "e/modules/tasks/item";
    parts {
+     part { name: "sel_shadow"; mouse_events: 0;
+         clip_to: "sel_clip";
+         description { state: "default" 0.0;
+            image.normal: "shadow_rounded_horiz.png";
+            image.border: 0 0 9 9;
+            rel1.offset: -2 -1;
+            rel1.to: "sel_base";
+            rel2.offset: 1 3;
+            rel2.to: "sel_base";
+            fill.smooth: 0;
+         }
+      }
+     part { name: "glow"; mouse_events: 0;
+         clip_to: "sel_clip";
+         description { state: "default" 0.0;
+            rel1.to: "sel_base";
+            rel2.to: "sel_base";
+            image.normal: "win_glow_round.png";
+            image.border: 9 9 9 9;
+            fill.smooth: 0;
+            image.middle: 0;
+            color: 255 255 255 0;
+         }
+         description { state: "visible" 0.0;
+            inherit: "default" 0.0;
+            rel1.offset: -6 -1;
+            rel2.offset: 5 3;
+            color: 255 255 255 128;
+         }
+         description { state: "hilighted" 0.0;
+            inherit: "default" 0.0;
+            rel1.offset: -5 -1;
+            rel2.offset: 5 3;
+            color: 255 255 255 255;
+         }
+      }
+     part { name: "base";
+         clip_to: "clip";
+         description { state: "default" 0.0;
+            image.normal: "button_normal.png";
+            image.border: 14 14 13 15;
+            rel1.offset: -5 -2;
+            rel1.to: "sel_base";
+            rel2.offset: 4 4;
+            rel2.to: "sel_base";
+            fill.smooth: 0;
+         }
+         description { state: "clicked" 0.0;
+            inherit: "default" 0.0;
+            image.normal: "button_clicked.png";
+            image.border: 15 15 14 16;
+         }
+      }
+      
       part { name: "sel_label";
          description { state: "default" 0.0;
             rel1.offset: 0 0;
@@ -384,6 +438,20 @@ group { name:"e/modules/tasks/item_vert";
             rel2.offset: -3 -3;
          }
       }
+      part { name: "bar"; mouse_events: 0;
+         clip_to: "sel_clip";
+         description { state: "default" 0.0;
+            rel1.offset: -3 -6;
+            rel1.relative: 0.0 1.0;
+            rel1.to: "sel_base";
+            rel2.offset: 2 5;
+            rel2.to: "sel_base";
+            image.normal: "horizontal_separated_bar_glow_round.png";
+            image.border: 7 7 7 7;
+            fill.smooth: 0;
+            fixed: 0 1;
+         }
+      }
       part { name: "e.swallow.icon"; type: SWALLOW; mouse_events: 0;
          clip_to: "icon_clip";
          description { state: "default" 0.0;
@@ -392,7 +460,7 @@ group { name:"e/modules/tasks/item_vert";
             rel1.to: "icon";
             rel2.to: "icon";
             rel1.offset: 4 4;
-            rel2.offset: -6 -6;
+            rel2.offset: -5 -6;
             color: 255 0 0 128;
          }
          description { state: "bounce1" 0.0;
@@ -404,6 +472,18 @@ group { name:"e/modules/tasks/item_vert";
             inherit: "default" 0.0;
             rel1.relative: 0.0 -0.15;
             rel2.relative: 1.0 0.85;
+         }
+      }
+      part {  name: "sel_shine"; mouse_events: 0;
+         clip_to: "sel_clip";
+         description { state: "default" 0.0;
+            image.normal: "shine.png";
+            rel1.offset: 2 -2;
+            rel1.to: "sel_base";
+            rel2.relative: 1.0 0.0;
+            rel2.offset: -2 2;
+            rel2.to: "sel_base";
+            FIXED_SIZE(10, 5)
          }
       }
    }
