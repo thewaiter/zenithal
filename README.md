@@ -8,6 +8,6 @@ Moksha port and customizations:
 
 [<img src="https://i.imgur.com/logRe1e.png ">](https://i.imgur.com/logRe1e.png)
 
-Original wallpaper by Martin Sedmák
+Original wallpaper by Martin Sedmák\
 Photo: A morning view from Krížna/Veľká Fatra to Vysoké Tatry ridge, 2024
 
