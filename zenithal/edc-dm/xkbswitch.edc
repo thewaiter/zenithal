@@ -109,8 +109,8 @@ group { name: "e/modules/xkbswitch/noflag";
       }
       part { name: "base"; type: RECT; mouse_events: 0;
          description { state: "default" 0.0;
-            rel1.offset: 3 3;
-            rel2.offset: -4 -4;
+            rel1.offset: 2 2;
+            rel2.offset: -3 -3;
             aspect: 1.8 1.8; aspect_preference: BOTH;
             color: 29 69 100 255;
          }
