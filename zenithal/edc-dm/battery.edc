@@ -114,6 +114,7 @@ group { name: "e/modules/battery/main";
             rel1.offset: 0 -2;
             rel2.to: "base";
             rel2.relative: (136/160) (40/160);
+            rel2.offset:  0  0;
             image.normal: "bat_top0.png";
          }
       }
