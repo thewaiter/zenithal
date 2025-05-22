@@ -755,6 +755,7 @@ group { name: "e/modules/everything/tab_item";
             min: 20 10;
             image.normal: "shadow_inset_bevels.png";
             image.border: 12 12 10 11;
+            rel2.offset: 0 -4;
             visible: 0;
          }
          description { state: "selected" 0.0;
