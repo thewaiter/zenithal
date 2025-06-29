@@ -291,7 +291,7 @@ group { name: "e/modules/syscon/button";
       part { name: "base";
          description { state: "default" 0.0;
             image.normal: "btn_round_0.png";
-            rel1.offset: 0 -3;
+            rel1.offset: 0 -1;
             aspect: 1.0 1.0; aspect_preference: BOTH;
          }
          description { state: "hilight" 0.0;
