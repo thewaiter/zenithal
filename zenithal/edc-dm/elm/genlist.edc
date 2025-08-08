@@ -145,7 +145,7 @@ group { "elm/genlist/item/group_index/default"; nomouse; program_source: "elm";
       }
       image { "base_vbar";
          desc { "default";
-            image.normal: "vgrad_med_lighter.png";
+            image.normal: "vgrad_med_lighter_square.png";
             fill.smooth: 0;
             min: 5 13;
             TILED_HORIZ(120)
