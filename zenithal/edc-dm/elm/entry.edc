@@ -495,7 +495,7 @@ group { name: "elm/entry/selection/default";
    parts {
       part { name: "base"; type: RECT;
          description { state: "default" 0.0;
-            color: 29 69 100 255;
+            color: 130 130 130 255;
          }
       }
    }
