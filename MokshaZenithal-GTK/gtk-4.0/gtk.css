@@ -1384,7 +1384,7 @@ separator.sidebar { background-color: #797979; }
 
 .navigation-sidebar > row:hover { background-color: #6e777c; }
 
-.navigation-sidebar > row:selected { background-color: #273943; color: inherit; }
+.navigation-sidebar > row:selected { background-color: #6e777c; color: inherit; }
 
 .navigation-sidebar > row:selected:hover { background-color: #a7a9aa; }
 
