@@ -793,6 +793,7 @@ group { name: "elm/radio/base/icon";
             rel2.to: "base";
             color: FN_COL_DEFAULT;
             color_class: "radio_text";
+            fixed: 1 1;
             text { font: FN; size: 10;
               min: 0 0;
               align: 0.5 1.0;
