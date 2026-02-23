@@ -32,20 +32,17 @@
              rel2.relative: 0.8 1.15;
          }
       }
-      part 
-          {
+      part {
           name: "e.text.counter";
           mouse_events: 0;
           type: TEXT;
           effect: OUTLINE_SOFT_SHADOW;
           scale: 1;
-          description 
-          {
+          description { state: "default" 0.0;
             rel1.to: "base";
             rel1.offset: -3 0;
             rel2.to: "base";
             rel2.offset: -3 2;
-            state: "default" 0.0;
             color: 255 255 255 255;
             color3: 0 0 0 32;
             color_class: "module_label";
@@ -58,9 +55,9 @@
                 min: 1 1;
                 align: 1.0 1.0;
                 ellipsis: -1;
-             }
             }
           }
+      }
    }
    programs {  
     program
@@ -269,7 +266,7 @@ group { name: "notification/main";
             min: 40 20;
          }
       }
-     part { name: "close";
+      part { name: "close";
          description { state: "default" 0.0;
             image.normal: "sym_close_light_normal.png";
             rel1.to: "e.event.close";
@@ -296,7 +293,7 @@ group { name: "notification/main";
             fixed: 1 1;
          }
       }
-    }
+   }
    programs {
       program {
          signal: "mouse,down,1"; source: "e.event.close";
