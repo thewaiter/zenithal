@@ -196,6 +196,7 @@ group { name: "notification/main";
       part { name: "message"; type: TEXTBLOCK; mouse_events: 0; scale: 1;
          description { state: "default" 0.0;
             align: 0.0 0.0;
+            min: 200 20;
             max: 500 99999;
             rel1.to_x: "notification.swallow.app_icon";
             rel1.to_y: "notification.text.title";
