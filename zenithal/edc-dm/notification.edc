@@ -47,51 +47,46 @@
             color3: 0 0 0 32;
             color_class: "module_label";
             visible: 1;
-            text 
-            {
-                text: "";
-                font: "Sans:style=Bold";
-                size: 8;
-                min: 1 1;
-                align: 1.0 1.0;
-                ellipsis: -1;
+            text {
+               text: "";
+               font: "Sans:style=Bold";
+               size: 8;
+               min: 1 1;
+               align: 1.0 1.0;
+               ellipsis: -1;
             }
           }
       }
    }
    programs {  
-    program
-          {
-           signal: "stop";
-           source: "";
-           action: STATE_SET "default" 0.0;
-           target: "base";
-          }
-    program
-          {
-           signal: "blink";
-           source: "";
-           action: STATE_SET "default" 0.0;
-           after: "down";
-           target: "base";
-          }
-    program
-          {
-           name: "normal";
-           action: STATE_SET "default" 0.0;
-           target: "base";
-           after: "down";
-           transition: DECELERATE 0.3;
-          }
-    program
-          {
-           name: "down";
-           action: STATE_SET "move_down" 0.0;
-           target: "base";
-           after: "normal";
-           transition: ACCELERATE 0.1;
-          } 
+     program {
+       signal: "stop";
+       source: "";
+       action: STATE_SET "default" 0.0;
+       target: "base";
     }
+    program {
+       signal: "blink";
+       source: "";
+       action: STATE_SET "default" 0.0;
+       after: "down";
+       target: "base";
+    }
+    program {
+       name: "normal";
+       action: STATE_SET "default" 0.0;
+       target: "base";
+       after: "down";
+       transition: DECELERATE 0.3;
+    }
+    program {
+       name: "down";
+       action: STATE_SET "move_down" 0.0;
+       target: "base";
+       after: "normal";
+       transition: ACCELERATE 0.1;
+     } 
+   }
 } 
  
 group { name: "notification/main";
@@ -140,8 +135,6 @@ group { name: "notification/main";
             image.normal: "vgrad_med_lighter_round.png";
             image.border: 12 12 12 12;
             fill.smooth: 1;
-            //~ rel1.offset: -10 0;
-            //~ rel2.offset:  10 0;
          }
       }
       part { name: "titleclip"; type: RECT;
@@ -185,7 +178,6 @@ group { name: "notification/main";
             rel1.offset: 4 4;
             rel2.to: "base";
             rel2.relative: 0.95 0.7;
-            //~ rel2.offset: -27 -13;
             text { style: "notification_style";
                min: 0 0;
                ellipsis: -1;
@@ -363,5 +355,4 @@ group { name: "e/modules/notification/action";
       }
    }
 }
-
 
