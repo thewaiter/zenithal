@@ -166,7 +166,7 @@ group { name: "e/shelf/default/base"; nomouse;
 group { name: "e/shelf/default/inset"; nomouse;
    alias: "e/shelf/alternate/inset";
    alias: "e/shelf/invisible/inset";
-   alias: "e/shelf/translucent/inset";
+   alias: "e/shelf/dark/inset";
    images.image: "horiz_bar_inset.png" COMP;
    images.image: "vert_bar_inset.png" COMP;
    parts {
@@ -318,7 +318,7 @@ group { name: "e/shelf/invisible/base"; nomouse;
    }
 }
 
-group { name: "e/shelf/translucent/base"; nomouse;
+group { name: "e/shelf/dark/base"; nomouse;
    inherit: "e/shelf/default/base";
    data {
       item: "shaped" "1";
@@ -349,7 +349,7 @@ group { name: "e/shelf/translucent/base"; nomouse;
 group { name: "e/shelf/default/plain"; nomouse;
    alias: "e/shelf/alternate/plain";
    alias: "e/shelf/invisible/plain";
-   alias: "e/shelf/translucent/plain";
+   alias: "e/shelf/dark/plain";
    parts {
       rect { "mouse"; mouse;
          desc { color: 0 0 0 0; }

@@ -4,7 +4,7 @@ images.image: "systray_expand_vert.png" COMP;
 group { name: "e/modules/systray/main";
    alias: "e/modules/systray/main/default";
    alias: "e/modules/systray/main/alternate";
-   alias: "e/modules/systray/main/translucent";
+   alias: "e/modules/systray/main/dark";
    data.item: "default" "197 196 196";
    data.item: "inset" "197 196 196";
    data.item: "plain" "197 196 196";
@@ -187,7 +187,7 @@ group { name: "e/modules/systray/main";
    }
 }
 
-group { name: "e/modules/systray/main/translucent";
+group { name: "e/modules/systray/main/dark";
    inherit: "e/modules/systray/main";
    data.item: "default" "45 45 45";
    data.item: "inset" "45 45 45";
